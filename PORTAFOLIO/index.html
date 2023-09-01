@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Alexis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/face.jpg" alt="">
+            </div>
+            <h1>Alexis Sch</h1>
+            <h2>Programador Junior - Diseño Web & Diseño Grafico</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/AlvaroCQ"><i class="fa-brands fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+                <a href="https://www.linkedin.com/in/Alvaro Choquehuanca Quea"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alexis Sch.</span> Soy un entusiasta desarrollador junior y diseñador apasionado por la
+                creación de experiencias digitales excepcionales. Con un año y medio de experiencia en programación y
+                una formación sólida en diseño gráfico y diseño web, he forjado un camino educativo que combina lo mejor
+                de ambos mundos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-12-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            591-68188079
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            arieljin432@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.Tecnologia&Mas.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            La Paz, Bolivia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Premiere Pro</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe After Effects</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Audition</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="skill">
+                        <span>Adobe Media Encoder</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudio</h4>
+                        <span class="casa">Universidad Pública del Alto</span>
+                        <span class="fecha">2022</span>
+                        <p>Desde mi ingreso a la Universidad Pública del Alto en 2022, estoy en medio de un emocionante
+                            viaje educativo en pleno desarrollo. Aunque actualmente me encuentro en mi segundo año de
+                            estudios, estoy comprometido a aprovechar cada oportunidad de aprendizaje que se me
+                            presente.
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudio</h4>
+                        <span class="casa">Mecánica Automotriz - Técnico Medio</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>
+                            Mi trayectoria en Mecánica Automotriz como Técnico Medio comenzó en el año 2021 y se
+                            extiende hasta el presente. Durante este tiempo, he estado inmerso en un apasionante viaje
+                            de aprendizaje en el mundo de la tecnología automotriz y el mantenimiento de vehículos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="col derecha">
+                    <h3>Proyectos Destacados</h3>
+                    <div class="item der">
+                        <h4>Proyecto de Diseño de Sitio Web</h4>
+                        <span class="casa">Curso de Diseño Web Completo</span>
+                        <span class="fecha">2023</span>
+                        <p>Desarrollé un proyecto completo de diseño y desarrollo de un sitio web interactivo como parte
+                            de un curso de diseño web. Aprendí a utilizar herramientas esenciales y técnicas modernas
+                            para crear una experiencia de usuario atractiva.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Proyecto de Diseño Gráfico</h4>
+                        <span class="casa">Curso de Diseño Gráfico</span>
+                        <span class="fecha">2023</span>
+                        <p>Participé en un proyecto creativo de diseño gráfico donde exploré la creación de logotipos y
+                            materiales de marca. Adquirí habilidades en el uso de herramientas de diseño y en la
+                            conceptualización de ideas visuales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item der">
+                        <h4>Proyecto Personal de Desarrollo de Sitios Web</h4>
+                        <span class="casa">Aprendizaje Autodidacta</span>
+                        <span class="fecha">En curso</span>
+                        <p>Estoy trabajando en un proyecto personal de desarrollo de una aplicación web para aplicar mis
+                            conocimientos de programación y diseño. Este proyecto me permite experimentar y aprender de
+                            manera práctica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla (233).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla (234).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla (235).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla (236).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <!-- <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/icono-de-Google-Maps-600x587.png">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                La Paz,Bolivia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +59168188079
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: arieljin432@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/Tecnologia&Mas"><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+            <a href="https://www.linkedin.com/in/Alvaro Choquehuanca Quea"><i class="fa-brands fa-linkedin-in"></i></a>
+            <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
